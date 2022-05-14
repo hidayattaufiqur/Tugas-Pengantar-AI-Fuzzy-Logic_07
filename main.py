@@ -120,5 +120,5 @@ if __name__ == '__main__':
     # sort data berdasarkan kualitas dan servis (higher better)
     dt.sort(key=lambda x: (x["kualitas"], x["servis"]), reverse=True)
     Data.output_data(dt)
-    for row in dt[:10]:
+    for row in dt:
         print(row)
